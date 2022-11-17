@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.example.flappybird.GameView
+        android:id="@+id/gv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/txt_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#002247"
+        android:textSize="50sp"
+        android:text="0"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnperson"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/imageView"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="-5dp"
+            android:background="@drawable/button"
+            android:foreground="@drawable/ic_baseline_person_24"
+            android:foregroundGravity="center"
+            android:foregroundTint="@color/black"
+            android:onClick="hesap"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="36dp"
+            tools:layout_editor_absoluteY="41dp" />
+
+        <Button
+            android:id="@+id/btnexit"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/btninfo"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button"
+            android:foreground="@drawable/ic_baseline_exit_to_app_24"
+            android:foregroundGravity="center"
+            android:foregroundTint="@color/black"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="36dp"
+            tools:layout_editor_absoluteY="41dp" />
+
+        <Button
+            android:id="@+id/btninfo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/btnleader"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button"
+            android:foreground="@drawable/ic_baseline_info_24"
+            android:foregroundGravity="center"
+            android:foregroundTint="@color/black"
+            android:onClick="hakkimizda"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="36dp"
+            tools:layout_editor_absoluteY="41dp" />
+
+        <Button
+            android:id="@+id/btnleader"
+            android:layout_width="50dp"
+            android:onClick="leader"
+            android:layout_height="50dp"
+            android:layout_below="@+id/btnperson"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button"
+            android:foreground="@drawable/ic_baseline_leaderboard_24"
+            android:foregroundGravity="center"
+            android:foregroundTint="@color/black"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="36dp"
+            tools:layout_editor_absoluteY="41dp" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button"
+            android:foreground="@drawable/ic_baseline_menu_24"
+            android:foregroundGravity="center"
+            android:foregroundTint="@color/black"
+            android:textOff=""
+            android:textOn="" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/toggleButton"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="-10dp"
+            android:background="@drawable/expand"
+            android:backgroundTint="@color/black"
+            android:visibility="invisible" />
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="257dp"
+            android:layout_height="87dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="300dp"
+            app:srcCompat="@drawable/cloud" />
+
+        <TextView
+            android:id="@+id/txt_start"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView2"
+            android:layout_alignEnd="@+id/imageView2"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="89dp"
+            android:fontFamily="@font/dilo"
+            android:text="Oyna"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/imgsound"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/ic_baseline_volume_up_24" />
+
+        <ImageView
+            android:id="@+id/imgmusic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/imgsound"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/ic_baseline_music_note_24" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_game_over"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/txt_game_over"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Oyun Bitti"
+            android:textColor="#ff00"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/txt_score_over"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="0"
+            android:textColor="#ff00"
+            android:textSize="100sp" />
+
+        <TextView
+            android:id="@+id/txt_best_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_score_over"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="En iyi score : 0"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_game_over"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Devam Etmek İçin Ekrana Tıklayın.."
+            android:textColor="#ff5722"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

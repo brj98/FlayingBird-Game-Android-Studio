@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.flappybird">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/bird_foreground"
+        android:label="Flaying Bird"
+        android:roundIcon="@mipmap/bird_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        android:usesCleartextTraffic="true">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyB-nYHYFP6YK1i8gdtfqq-0_y9SW7xUY7g"/>
+        <activity
+            android:name=".giris"
+            android:exported="false" />
+        <activity
+            android:name=".leader"
+            android:exported="false" />
+        <activity
+            android:name=".kayit"
+            android:exported="false" />
+        <activity
+            android:name=".hesap"
+            android:exported="false" />
+        <activity
+            android:name=".hakkimizda"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".splashscreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

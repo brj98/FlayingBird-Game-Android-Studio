@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="60dp"
+    android:layout_marginVertical="3dp"
+    android:layout_marginHorizontal="7dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/button"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/txtda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="aa"
+                android:fontFamily="@font/dilo"
+                android:gravity="center"
+                android:textSize="40sp"
+                android:textColor="#121111"/>
+            <TextView
+                android:id="@+id/txtscorecek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:fontFamily="@font/dilo"
+                android:gravity="center"
+                android:textSize="40sp"
+                android:textColor="#D82020"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/rank"
+            android:layout_width="94dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-375dp"
+            android:background="@drawable/rank"
+            android:fontFamily="@font/dilo"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textSize="40sp" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".leader">
+    <com.example.flappybird.GameView
+        android:id="@+id/gv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <Button
+        android:id="@+id/menu"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_baseline_home_24"
+        android:backgroundTint="#000000"
+        android:onClick="anasayfa3" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/leaderbordrc"
+        android:layout_width="409dp"
+        android:layout_height="678dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="31dp" />
+
+</RelativeLayout>

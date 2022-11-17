@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "835765025316",
+    "project_id": "leaderbord-1c278",
+    "storage_bucket": "leaderbord-1c278.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:835765025316:android:349c000822b0ac1564f6b1",
+        "android_client_info": {
+          "package_name": "com.example.flappybird"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "835765025316-lk9m9h7d8aer372jhbhe214naavo6b2i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.flappybird",
+            "certificate_hash": "568f63337e481bfaef44652d8da27504a3363cec"
+          }
+        },
+        {
+          "client_id": "835765025316-qpf1ejpd85075d2uh47cj1i3jmojpdmc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9JiBZLJDEIxSoUkvc4lp2SawcTOw9X9s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "835765025316-qpf1ejpd85075d2uh47cj1i3jmojpdmc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
